@@ -1,0 +1,4 @@
+@echo off
+call "C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Auxiliary\Build\vcvars64.bat" >nul
+cd /d "C:\Users\RYZEN\Documents\Codex\2026-09-06\cr\outputs\LocalFlow\native\build"
+cl /nologo /std:c++20 /EHsc /W4 /WX /MD /utf-8 /DUNICODE /D_UNICODE /O2 /LD "C:\Users\RYZEN\Documents\Codex\2026-09-06\cr\outputs\LocalFlow\native\injection\target.cpp" "C:\Users\RYZEN\Documents\Codex\2026-09-06\cr\outputs\LocalFlow\native\injection\windows_uia.cpp" "C:\Users\RYZEN\Documents\Codex\2026-09-06\cr\outputs\LocalFlow\native\injection\clipboard.cpp" "C:\Users\RYZEN\Documents\Codex\2026-09-06\cr\outputs\LocalFlow\native\injection\focused.cpp" "C:\Users\RYZEN\Documents\Codex\2026-09-06\cr\outputs\LocalFlow\native\injection\tracker.cpp" "C:\Users\RYZEN\Documents\Codex\2026-09-06\cr\outputs\LocalFlow\native\injection\module.cpp" /link /OUT:flow-injection.dll user32.lib ole32.lib oleaut32.lib uiautomationcore.lib

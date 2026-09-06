@@ -1,0 +1,148 @@
+{
+  "model": "Qwen3-1.7B Q8_0",
+  "promptVersion": "1.0.0",
+  "passed": 9,
+  "total": 10,
+  "note": "Keyword regression checks plus manual review, not a general quality benchmark.",
+  "results": [
+    {
+      "mode": "clean",
+      "source": "um send it Friday no sorry Monday and don't include the budget",
+      "must": [
+        "Monday",
+        "budget"
+      ],
+      "mustNot": [
+        "Friday"
+      ],
+      "output": "Send it Monday, and don't include the budget.",
+      "pass": true,
+      "milliseconds": 1067
+    },
+    {
+      "mode": "prompt",
+      "source": "make a python script to rename my photos by date but don't overwrite anything and show me first",
+      "must": [
+        "Python",
+        "date",
+        "overwrite"
+      ],
+      "mustNot": [
+        "```"
+      ],
+      "output": "Write a Python script that renames photos by date. Do not overwrite existing files. Include a preview of the proposed changes before applying them.",
+      "pass": true,
+      "milliseconds": 2467
+    },
+    {
+      "mode": "prompt",
+      "source": "explain recursion to a ten year old with one example",
+      "must": [
+        "recursion",
+        "example"
+      ],
+      "mustNot": [
+        "```"
+      ],
+      "output": "Explain recursion to a ten-year-old using one simple example.",
+      "pass": true,
+      "milliseconds": 1123
+    },
+    {
+      "mode": "clean",
+      "source": "I think the estimate is 15 percent but I'm not sure",
+      "must": [
+        "15",
+        "sure"
+      ],
+      "mustNot": [],
+      "output": "I think the estimate is 15 percent but I'm not sure.",
+      "pass": true,
+      "milliseconds": 1222
+    },
+    {
+      "mode": "prompt",
+      "source": "write a short email to Maya saying the demo is delayed until September 12 and don't promise a refund",
+      "must": [
+        "Maya",
+        "September 12",
+        "refund"
+      ],
+      "mustNot": [],
+      "output": "Write a short email to Maya stating that the demo is delayed until September 12 and do not promise a refund.",
+      "pass": true,
+      "milliseconds": 1995
+    },
+    {
+      "mode": "clean",
+      "source": "Please keep C++ and NeMo-Speech.cpp in the title",
+      "must": [
+        "C++",
+        "NeMo-Speech.cpp"
+      ],
+      "mustNot": [],
+      "output": "Please keep C++ and NeMo-Speech.cpp in the title.",
+      "pass": true,
+      "milliseconds": 1121
+    },
+    {
+      "must": [
+        "SQLite",
+        "offline",
+        "login"
+      ],
+      "mustNot": [
+        "Firebase",
+        "Supabase"
+      ],
+      "mode": "prompt",
+      "source": "help me plan a desktop timer that uses SQLite and works offline, no login",
+      "output": "Create a desktop timer application that uses SQLite and operates offline. Do not require login. Provide the code and instructions for setup and usage.",
+      "pass": true,
+      "milliseconds": 2179
+    },
+    {
+      "must": [
+        "5",
+        "3"
+      ],
+      "mustNot": [
+        "4"
+      ],
+      "mode": "clean",
+      "source": "the meeting is at 4 no actually 5 pm and bring 3 copies",
+      "output": "The meeting is at 4, actually 5 pm, and bring 3 copies.",
+      "pass": false,
+      "milliseconds": 1457
+    },
+    {
+      "must": [
+        "table",
+        "cost",
+        "200"
+      ],
+      "mustNot": [
+        "```"
+      ],
+      "mode": "prompt",
+      "source": "compare these two proposals in a table, focus on cost and delivery time and keep it under 200 words",
+      "output": "Compare these two proposals in a table, focusing on cost and delivery time. Keep it under 200 words.",
+      "pass": true,
+      "milliseconds": 1956
+    },
+    {
+      "must": [
+        "might",
+        "Priya",
+        "250",
+        "not"
+      ],
+      "mustNot": [],
+      "mode": "clean",
+      "source": "I might be wrong but Priya said the limit is 250 megabytes not 250 gigabytes",
+      "output": "I might be wrong but Priya said the limit is 250 megabytes not 250 gigabytes.",
+      "pass": true,
+      "milliseconds": 2059
+    }
+  ]
+}

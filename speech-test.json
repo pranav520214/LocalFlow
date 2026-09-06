@@ -1,0 +1,6 @@
+{
+  "text": "And so my fellow Americans ask not what your country can do for you. Ask what you can do for your country.",
+  "milliseconds": 846,
+  "sample": "NVIDIA repository jfk.wav",
+  "engine": "NeMo-Speech.cpp 0.1.0, Nemotron 3.5 ASR 0.6B Q8, CUDA0"
+}

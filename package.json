@@ -1,0 +1,20 @@
+{
+  "name": "localflow",
+  "version": "0.1.0",
+  "description": "Private desktop dictation and prompt engineering with NeMo-Speech.cpp and llama.cpp",
+  "main": "src/main.cjs",
+  "scripts": {
+    "start": "electron .",
+    "test": "node --test tests/*.test.cjs",
+    "package": "electron-packager . LocalFlow --platform=win32 --arch=x64 --out=dist --overwrite --ignore=^/dist --ignore=^/tests --ignore=^/runtimes --ignore=^/models --ignore=^/data --ignore=^/work"
+  },
+  "devDependencies": {
+    "@electron/packager": "^19.0.0",
+    "electron": "^40.0.0",
+    "playwright": "^1.63.0"
+  },
+  "license": "MIT",
+  "dependencies": {
+    "koffi": "^3.2.1"
+  }
+}

@@ -1,0 +1,112 @@
+[
+  {
+    "mode": "clean",
+    "source": "um send it Friday no sorry Monday and don't include the budget",
+    "must": [
+      "Monday",
+      "budget"
+    ],
+    "mustNot": [
+      "Friday"
+    ]
+  },
+  {
+    "mode": "prompt",
+    "source": "make a python script to rename my photos by date but don't overwrite anything and show me first",
+    "must": [
+      "Python",
+      "date",
+      "overwrite"
+    ],
+    "mustNot": [
+      "```"
+    ]
+  },
+  {
+    "mode": "prompt",
+    "source": "explain recursion to a ten year old with one example",
+    "must": [
+      "recursion",
+      "example"
+    ],
+    "mustNot": [
+      "```"
+    ]
+  },
+  {
+    "mode": "clean",
+    "source": "I think the estimate is 15 percent but I'm not sure",
+    "must": [
+      "15",
+      "sure"
+    ],
+    "mustNot": []
+  },
+  {
+    "mode": "prompt",
+    "source": "write a short email to Maya saying the demo is delayed until September 12 and don't promise a refund",
+    "must": [
+      "Maya",
+      "September 12",
+      "refund"
+    ],
+    "mustNot": []
+  },
+  {
+    "mode": "clean",
+    "source": "Please keep C++ and NeMo-Speech.cpp in the title",
+    "must": [
+      "C++",
+      "NeMo-Speech.cpp"
+    ],
+    "mustNot": []
+  },
+  {
+    "must": [
+      "SQLite",
+      "offline",
+      "login"
+    ],
+    "mustNot": [
+      "Firebase",
+      "Supabase", "Provide the code"
+    ],
+    "mode": "prompt",
+    "source": "help me plan a desktop timer that uses SQLite and works offline, no login"
+  },
+  {
+    "must": [
+      "5",
+      "3"
+    ],
+    "mustNot": [
+      "4"
+    ],
+    "mode": "clean",
+    "source": "the meeting is at 4 no actually 5 pm and bring 3 copies"
+  },
+  {
+    "must": [
+      "table",
+      "cost",
+      "200"
+    ],
+    "mustNot": [
+      "```"
+    ],
+    "mode": "prompt",
+    "source": "compare these two proposals in a table, focus on cost and delivery time and keep it under 200 words"
+  },
+  {
+    "must": [
+      "might",
+      "Priya",
+      "250",
+      "not"
+    ],
+    "mustNot": [],
+    "mode": "clean",
+    "source": "I might be wrong but Priya said the limit is 250 megabytes not 250 gigabytes"
+  }
+]
+

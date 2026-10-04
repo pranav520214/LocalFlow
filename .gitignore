@@ -4,3 +4,4 @@ runtimes/
 models/
 data/
 *.log
+work/
